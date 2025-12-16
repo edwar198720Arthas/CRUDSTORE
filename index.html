@@ -4,42 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <title>CRUD.STORE</title>
 </head>
 
 <body>
     
 <header class="main-header">
-    <p class="label">Sign up and get 20% off to your first order. <u>Sign Up Now</u></p>
 
-    <h1 class="title">CRUD.STORE</h1>
+    <section class="Register">
+        <span class="close-btn">&times;</span>
+        <p class="label">Sign up and get 20% off to your first order. <u>Sign Up Now</u></p>
+    </section>
 
-    <nav>
-        <ul class="main-menu">
+    <section class="header-content">
 
-            <a href="Shop">Shop</a>
-            <ul class="submenu1">
-                <a href="men">Men</a>
-                <ul class="submenu2">
-                    <li><a href="t-shirts">T-shirts</a></li>
+        <h1 class="title">CRUD.STORE</h1>
+        <section class="navigator">
+            
+
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="Shop">Shop <img src="./img/home-page/section-navegator/1.png" alt=""></a>
+                        <!--<ul class="submenu1">
+                            <li><a href="men">Men</a>
+                                <ul class="submenu2">
+                                    <li><a href="t-shirts">T-shirts</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="women">Women</a></li>
+                            <li><a href="casual">Casual</a></li>
+                        </ul>-->
+                    </li>
+                    <li><a href="On Sale">On Sale</a></li>
+                    <li><a href="#New-Arrivals">New Arrivals</a></li>
+                    <li><a href="Brands">Brands</a></li>
                 </ul>
+            </nav>
+        </section>
 
-                <li><a href="women">Women</a></li>
-                <li><a href="casual">Casual</a></li>
-            </ul>
+        <section class="search">
 
-            <li><a href="On Sale">On Sale</a></li>
-            <li><a href="#New-Arrivals">New Arrivals</a></li>
-            <li><a href="Brands">Brands</a></li>
-        </ul>
-    </nav>
-    
-    <div class="header-icons">
-        <a href="cart" class="icon-link"><i class="fa-solid fa-user"></i></a>
-        <a href="account"><i class="fa-solid fa-shopping"></i></a>
-    </div>
+            <img src="./img/home-page/section-search/1.png" alt="">
+            <input type="text" id="search" name="search" placeholder="Search for products..." >
+        </section>
 
-
+        <section class="header-icons">
+            <img src="./img/home-page/section-header-icons/1.png" alt="">
+            <img src="./img/home-page/section-header-icons/2.png" alt="">
+        </section>
+    </section>
 </header>
 
 <main>
