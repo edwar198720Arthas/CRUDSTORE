@@ -693,3 +693,140 @@ flex-direction: column;
     margin: 0 auto;
     width: 90%;
 }
+
+@media (max-width: 768px) {
+    
+    /* 1. Header y Navegación */
+    .header-content {
+        flex-direction: column; /* Apila logo, menú y búsqueda */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .main-menu {
+        flex-wrap: wrap; /* Permite que el menú baje si no cabe */
+        justify-content: center;
+    }
+
+    .search {
+        width: 100%; /* El buscador ocupa todo el ancho en móvil */
+    }
+
+    /* 2. Banner Principal (Intro) */
+    .logo-bar {
+        display: flex;
+        flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+    }
+
+    .intro {
+        justify-content: center;
+    }
+
+    .intro img {
+        width: 100%; /* Imagen a ancho completo */
+        left: 0;
+    }
+
+    .content-wrapper {
+        position: relative; /* Deja de ser flotante para no tapar la imagen */
+        width: 90%;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-text1 h1 {
+        font-size: 32px; /* Reducimos el tamaño del título gigante */
+        margin-bottom: 1rem;
+    }
+
+    .intro-text1 {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%; /* Botón grande para pulsar fácil con el dedo */
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .intro-text2, .intro-text3 {
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    /* 3. Secciones de Productos (Arrivals / Top Selling) */
+    .Arrivals h2, .top-selling h2 {
+        font-size: 2rem;
+    }
+
+    .Arrivals figure, .top-selling figure {
+        width: 40%; /* Dos productos por fila en móviles */
+        margin: 5%;
+    }
+
+    /* 4. Sección Browse (Categorías) */
+    .Browse {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .Browse h2 {
+        font-size: 28px;
+    }
+
+    .browse-item {
+        flex-basis: 100% !important; /* Cada categoría ocupa una fila completa */
+    }
+
+    /* 5. Comentarios (Customers) */
+    .stiker-container {
+        flex-direction: column; /* Comentarios uno debajo del otro */
+        align-items: center;
+    }
+
+    .customes .stiker {
+        max-width: 100%;
+    }
+
+    /* 6. Footer / Banner Newsletter */
+    .banner2 {
+        flex-direction: column; /* Texto arriba, formulario abajo */
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+        border: none; /* Quitamos bordes gruesos en móvil */
+    }
+
+    .banner-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner2 h2 {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .intro-email, .subcribe {
+        width: 100%; /* Inputs a lo ancho de la pantalla */
+    }
+
+    .company {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Ajuste extra para móviles muy pequeños */
+@media (max-width: 480px) {
+    .Arrivals figure, .top-selling figure {
+        width: 90%; /* Un solo producto por fila */
+    }
+}
